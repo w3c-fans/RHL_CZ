@@ -505,3 +505,26 @@ footer#footer .colophon a.back-to-top {
 	}
 
 }
+
+.cms-home #main-wrapper{
+	display: none;
+}
+
+/*Contact Us style*/
+.cms-contact-us .entry-content h2{
+	color: #024361;
+	font-size: 24px;
+	border-bottom: dashed;
+	border-width: 1px;
+	border-color: #a6a6a6;
+	line-height: 1.9;
+}
+
+.cms-contact-us .entry-header{
+	display: none;
+}
+
+.cms-contact-us .entry-content a{
+	color: #222;
+	text-decoration: underline;
+}

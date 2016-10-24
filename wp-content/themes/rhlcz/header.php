@@ -43,3 +43,22 @@
   		 	//This hook is used for the slider : TC_slider::$instance->tc_slider_display()
   			do_action ( '__after_header' )
   		?>
+      <script type="text/javascript">
+      jQuery( document ).ready(function() {
+         var IfIsHome = jQuery('.carousel').hasClass('home-slider');
+         var IfIsContact = jQuery('.carousel').hasClass('contact-us');
+         var IfIsAbout= jQuery('.carousel').hasClass('aboutus');
+
+         if(IfIsHome){
+            jQuery('body').addClass('cms-home');
+          } else if(IfIsContact){
+            jQuery('body').addClass('cms-contact-us');
+          } else if(IfIsAbout){
+            jQuery('body').addClass('cms-about-us');
+          }
+    
+    });
+
+
+    
+      </script>

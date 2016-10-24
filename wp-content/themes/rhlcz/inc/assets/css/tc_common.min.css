@@ -5176,7 +5176,7 @@ a.label:hover {
 
 body {
 	padding-bottom: 0;
-	color: #5a5a5a;
+	color: #222;
 	background: #fff
 }
 
@@ -5559,8 +5559,12 @@ a+span.tc-external:after {
 .tc-header {
 	min-height: 45px;
 	background: #fff;
-	border-bottom: 10px solid #e9eaee;
+	border-bottom: 1px solid #aaa9a9;
 	z-index: 200
+}
+.cms-about-us .tc-header,
+.cms-contact-us .tc-header{
+	margin-bottom: 20px;
 }
 
 #tc-reset-margin-top {
@@ -6584,11 +6588,13 @@ video {
 
 .carousel>.center-slides-enabled>.item>.carousel-image img {
 	display: block;
-	position: relative
+	position: relative;
+	top: 0!important;
 }
 .carousel.aboutus, .carousel.contact-us{
 	height: 12.25rem!important;
 	line-height: 12.25rem!important;
+	overflow: hidden;
 }
 
 .carousel.aboutus .carousel-caption,
