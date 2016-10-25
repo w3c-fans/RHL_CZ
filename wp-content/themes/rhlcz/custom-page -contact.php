@@ -43,8 +43,16 @@ Template Name: Custom Page Contact
     </div><!-- .container role: main -->
 
     <?php do_action( '__after_main_container' ); ?>
+    <style type="text/css">
+    .input_control{
+        border-color: #222!important;
+    }
+    .cb_form_wrapper label span.error{
+        color: #f20!important;
+    }
+    </style>
 
-    
+
 
     <strong>公司地址：</strong>
     <iframe id="ifrObj" src="/wp-content/uploads/2016/10/2016_10_baidumap.html" width="100%" height="400" frameborder="no" marginwidth="0" marginheight="0" scrolling="no"></iframe>

@@ -518,6 +518,7 @@ footer#footer .colophon a.back-to-top {
 	border-width: 1px;
 	border-color: #a6a6a6;
 	line-height: 1.9;
+	margin-bottom: 20px;
 }
 
 .cms-contact-us .entry-header{
@@ -527,4 +528,38 @@ footer#footer .colophon a.back-to-top {
 .cms-contact-us .entry-content a{
 	color: #222;
 	text-decoration: underline;
+}
+
+.cb_form_wrapper label, .cb_form_wrapper .layout-controls{
+	float: left!important;
+}
+.cb_form_wrapper label{
+	 width: 21%;
+    min-width: 125px;
+    text-indent: 20px;
+}
+.cb_form_wrapper label span.error{
+	text-indent: 0;
+}
+.cb_form_wrapper .layout-controls{
+	width: 60%;
+}
+.layout-control-group .btn_submit{
+	display: block;
+	margin: 0 auto;
+	position: relative;
+	width: 100px;
+	text-align: center;
+	text-indent: -19999px;
+}
+.layout-control-group .btn_submit:after{
+	content: "提交";
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	width: 100px;
+	line-height: 45px;
+	text-indent: 0px;
+
 }
