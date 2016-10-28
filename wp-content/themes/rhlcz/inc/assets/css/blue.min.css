@@ -563,3 +563,6 @@ footer#footer .colophon a.back-to-top {
 	text-indent: 0px;
 
 }
+.layout-control-group textarea{
+	height: 150px;
+}

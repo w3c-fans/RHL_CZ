@@ -7864,7 +7864,7 @@ tr:nth-child(even) th {
 
 footer#footer {
 	color: #222 !important;
-	border-top: 10px solid #e9eaee;
+	border-top: 0;
 	background: #fff;
 	padding: 0
 }

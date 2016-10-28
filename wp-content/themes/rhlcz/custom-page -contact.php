@@ -51,6 +51,9 @@ Template Name: Custom Page Contact
         color: #f20!important;
     }
     </style>
+    <script type="text/javascript">
+        jQuery('.layout-control-group textarea').parents('.layout-control-group').prev('.layout-control-group').hide();
+    </script>
 
 
 
