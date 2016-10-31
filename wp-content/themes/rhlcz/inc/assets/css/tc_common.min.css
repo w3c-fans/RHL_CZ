@@ -5559,8 +5559,7 @@ a+span.tc-external:after {
 .tc-header {
 	min-height: 45px;
 	background: #fff;
-	border-bottom: 1px solid #aaa9a9;
-	z-index: 200
+	z-index: 200;
 }
 .cms-about-us .tc-header,
 .cms-contact-us .tc-header{
@@ -5842,7 +5841,7 @@ h2.site-description {
 .logo-left .navbar div>ul.nav>.menu-item:last-child>a,
 .pull-menu-right .navbar div>ul.nav>.menu-item:last-child>a,
 .tc-header .btn-toggle-nav.pull-right {
-	padding-right: 0
+	//padding-right: 0
 }
 
 .navbar-inner .nav-collapse .nav li.open>ul,
@@ -6868,6 +6867,7 @@ article.hover .tc-thumbnail .round-div {
 #main-wrapper {
 	margin-top: 20px;
 	margin-bottom: 20px
+	border-top: 1px solid #aaa9a9;
 }
 
 .entry-summary {
@@ -7328,7 +7328,7 @@ img.v-centered {
 	-ms-transition: opacity .2s, left .2s, top .2s;
 	-o-transition: opacity .2s, left .2s, top .2s;
 	transition: opacity .2s, left .2s, top .2s;
-	position: relative
+	position: relative;
 }
 
 .tc-grid-post figcaption {
@@ -8127,6 +8127,7 @@ li#wp-admin-bar-tc-customizr-help a {
 	.navbar-static-top .container,
 	.span12 {
 		width: calc(1170px - 134px);
+		width: 1170px;
 	}
 
 	.span11 {
@@ -8176,6 +8177,10 @@ li#wp-admin-bar-tc-customizr-help a {
 	.row-fluid,
 	.row-fluid .span12 {
 		width: 100%
+	}
+	 .row-fluid .span12, .tc-header {
+		max-width: 73.125rem;
+		margin:0 auto;
 	}
 
 	.offset12 {
@@ -10008,16 +10013,18 @@ li#wp-admin-bar-tc-customizr-help a {
 		max-height: 130px;
 		overflow: hidden
 	}
-
+	.carousel .item img{
+		left: -5%!important;
+	}
 	.item .carousel-caption h1 {
 		font-size: 20px
 	}
 
 	.carousel-caption .btn,
 	.carousel-caption .lead {
-		font-size: 13px;
-		line-height: 13px;
-		max-height: 50px;
+		font-size: 25px;
+		line-height: 1.5;
+		max-height: 90px;
 		overflow: hidden
 	}
 

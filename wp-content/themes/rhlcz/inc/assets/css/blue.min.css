@@ -455,7 +455,7 @@ footer#footer .colophon a.back-to-top {
 }
 
 .tc-grid-border .tc-grid {
-	border-bottom: 3px solid #173ca5
+	
 }
 
 
@@ -565,4 +565,16 @@ footer#footer .colophon a.back-to-top {
 }
 .layout-control-group textarea{
 	height: 150px;
+}
+
+#nav-below{display: none;}
+
+.navbar .nav>li.current-menu-item>a{
+	background: #173ca5;
+	color: #fff!important;
+	text-shadow: transparent;
+}
+
+.row-fluid .has-post-thumbnail{
+	padding: 10px;
 }

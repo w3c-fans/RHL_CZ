@@ -60,6 +60,8 @@ Template Name: Custom Page Contact
     <strong>公司地址：</strong>
     <iframe id="ifrObj" src="/wp-content/uploads/2016/10/2016_10_baidumap.html" width="100%" height="400" frameborder="no" marginwidth="0" marginheight="0" scrolling="no"></iframe>
 
+
+
 </div><!-- //#main-wrapper -->
 
 <?php do_action( '__after_main_wrapper' );##hook of the footer with get_get_footer ?>
