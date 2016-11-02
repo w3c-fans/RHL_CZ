@@ -2713,7 +2713,7 @@ input[type=submit].btn-block {
 	padding: 5px 0;
 	margin: 2px 0 0;
 	list-style: none;
-	background-color: #fff;
+	background-color: rgba(255, 255, 255, .5);
 	border: 1px solid #ccc;
 	-webkit-border-radius: 6px;
 	-moz-border-radius: 6px;
@@ -2756,7 +2756,7 @@ input[type=submit].btn-block {
 	display: block;
 	padding: 3px 20px;
 	font-weight: 400;
-	line-height: 20px;
+	line-height: 25px;
 	color: #333;
 	white-space: nowrap
 }
@@ -3864,7 +3864,7 @@ input[type=submit].btn::-moz-focus-inner {
 	float: none;
 	color: #222!important;
 	text-decoration: none;
-	text-shadow: 0 1px 0 #fff
+	//text-shadow: 0 1px 0 #fff
 }
 
 .navbar .nav .dropdown-toggle .caret {
@@ -3912,7 +3912,7 @@ input[type=submit].btn::-moz-focus-inner {
 	border-bottom: 7px solid #ccc;
 	border-bottom-color: rgba(0, 0, 0, .2);
 	top: -7px;
-	left: 9px
+	left: 50%;
 }
 
 .navbar .nav>li>.dropdown-menu:after {
@@ -3920,7 +3920,7 @@ input[type=submit].btn::-moz-focus-inner {
 	border-right: 6px solid transparent;
 	border-bottom: 6px solid #fff;
 	top: -6px;
-	left: 10px
+	left: 50%;
 }
 
 .affix,
@@ -5719,7 +5719,7 @@ body:not(.tc-sticky-header) #tc-reset-margin-top {
 .navbar-wrapper {
 	z-index: 200;
 	position: relative;
-	margin-top: 7px;
+	margin-top: 0;
 	margin-bottom: 0
 }
 
@@ -6096,7 +6096,7 @@ nav#tc-sn {
 }
 
 .nav .dropdown-menu a {
-	color: #777
+	color: #222
 }
 
 .navbar div>ul.sn-nav>.menu-item:first-child>a {
@@ -6351,7 +6351,7 @@ nav#tc-sn {
 }
 
 .tc-sidebar .widget li {
-	line-height: 25px;
+	line-height: 35px;
 	border-bottom: 1px solid #EEE;
 	position: relative
 }
@@ -6374,7 +6374,7 @@ footer#footer .colophon .credits a[class*=icon-] {
 .tc-sidebar .widget li:hover,
 .widget li:focus {
 	text-decoration: none;
-	background-color: #EEE
+	//background-color: #EEE
 }
 
 .tc-sidebar .widget li a {

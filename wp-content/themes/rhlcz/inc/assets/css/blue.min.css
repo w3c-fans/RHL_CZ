@@ -386,8 +386,8 @@ a.thumbnail:hover {
 .navbar .nav>li.current-menu-item>a .caret,
 .tc-regular-menu .navbar .nav li.current-menu-ancestor>a .caret,
 .tc-regular-menu .navbar .nav li.dropdown.current-menu-ancestor>a .caret {
-	border-top-color: #173ca5;
-	border-bottom-color: #173ca5
+	border-top-color: #fff;
+	border-bottom-color: #fff
 }
 
 .dropdown-menu>li.current-menu-item>a:after,
@@ -498,10 +498,20 @@ footer#footer .colophon a.back-to-top {
 
 }
 
-@media (min-width:1500px) {
+@media (min-width:1150px) {
+	body{
+		background:  url(img/bg_body.png) no-repeat right 0;
+		background-size: 60%;
+
+	}
+
+}
+
+@media (min-width:980px) {
 	body{
 		background:  url(img/bg_body.png) no-repeat right 0;
 		background-size: 50%;
+		font-size: 0.9375rem;
 	}
 
 }
@@ -577,4 +587,8 @@ footer#footer .colophon a.back-to-top {
 
 .row-fluid .has-post-thumbnail{
 	padding: 10px;
+}
+
+.category-products-and-service .left.tc-sidebar{
+	display: none;
 }
