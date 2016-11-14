@@ -29,6 +29,7 @@
     <?php do_action( '__before_page_wrapper' ); ?>
 
     <div id="tc-page-wrap" class="<?php echo implode( " ", apply_filters('tc_page_wrap_class', array() ) ) ?>">
+    
 
   		<?php do_action( '__before_header' ); ?>
 

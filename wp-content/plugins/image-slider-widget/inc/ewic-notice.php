@@ -45,7 +45,7 @@ function ewic_nag_ignore() {
 /*-------------------------------------------------------------------------------*/
 /*   Rating Notice @since 1.1.9
 /*-------------------------------------------------------------------------------*/
-add_action('admin_notices', 'ewic_rating_admin_notice');
+//add_action('admin_notices', 'ewic_rating_admin_notice');
 
 function ewic_rating_admin_notice() {
 		
@@ -53,7 +53,7 @@ function ewic_rating_admin_notice() {
 		if ( !empty( $post ) && 'easyimageslider' === $post->post_type && is_admin() ) {
 	
        	 		echo '<div class="updated"><p>'; 
-        		echo'<span style="color:#0073AA;">If you use</span> <strong>'.EWIC_NAME.'</strong><span style="color:#0073AA;"> and found it useful then please consider rating it and leaving your positive feedback</span> <a href="https://wordpress.org/support/view/plugin-reviews/image-slider-widget?filter=5#postform" target="_blank" style="color: red !important;">here</a>';
+        		echo'<span style="color:#0073AA;">If you use</span> <strong>'.EWIC_NAME.'</strong><span style="color:#0073AA;"> and found it useful then please consider rating it and leaving your positive feedback</span> <a href="https://wordpress.org/support/view/plugin-reviews/image-slider-widget?filter=5#postform" target="_blank" style="color: red !important;">from here</a>';
         		echo "</p></div>";
 				
 		}

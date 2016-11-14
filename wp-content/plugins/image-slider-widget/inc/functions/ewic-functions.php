@@ -172,7 +172,7 @@ echo $enobuy;
 /*-------------------------------------------------------------------------------*/
 function ewic_prodemo_metabox () {
 	$enobuy = '<div style="text-align:center;">';
-	$enobuy .= '<a id="ewicdemotableclr" style="outline: none !important;" target="_blank" href="http://demo.ghozylab.com/plugins/easy-image-slider-plugin/image-slider-with-thumbnails-at-the-bottom/"><img class="ewichvrbutton" src="'.plugins_url( 'images/view-demo-button.jpg' , dirname(__FILE__) ).'" width="232" height="60" alt="Pro Version Demo" ></a>';
+	$enobuy .= '<a id="ewicdemotableclr" style="outline: none !important;" target="_blank" href="https://ghozy.link/9vlg3"><img class="ewichvrbutton" src="'.plugins_url( 'images/view-demo-button.jpg' , dirname(__FILE__) ).'" width="232" height="60" alt="Demo Pro Version" ></a>';
 	$enobuy .= '</div>';
 echo $enobuy;	
 }
@@ -467,7 +467,7 @@ function ewic_get_aff_data() {
 				// Call the custom API.
 				$response = _ewicaffiliateFetchmode( $api_params );
 
-				if ( $response->status == true ) {
+				if ( isset( $response ) && $response->status == true ) {
 		
 					ewic_update_aff_info( $response, $affemail );
 					echo json_encode( $response );
@@ -616,4 +616,138 @@ function ewic_generate_timthumb( $url, $w, $h ) {
 }
 
 
-?>
+/*-------------------------------------------------------------------------------*/
+/*  Duplicate Slider
+/*-------------------------------------------------------------------------------*/
+function ewic_duplicate_slider(){
+	global $wpdb;
+	if (! ( isset( $_GET['post']) || isset( $_POST['post'])  || ( isset($_REQUEST['action']) && 'ewic_duplicate_slider' == $_REQUEST['action'] ) ) ) {
+		wp_die('No post to duplicate has been supplied!');
+	}
+ 
+	/*
+	 * get the original post id
+	 */
+	$post_id = (isset($_GET['post']) ? $_GET['post'] : $_POST['post']);
+	/*
+	 * and all the original post data then
+	 */
+	$post = get_post( $post_id );
+ 
+	/*
+	 * if you don't want current user to be the new post author,
+	 * then change next couple of lines to this: $new_post_author = $post->post_author;
+	 */
+	$current_user = wp_get_current_user();
+	$new_post_author = $current_user->ID;
+ 
+	/*
+	 * if post data exists, create the post duplicate
+	 */
+	if (isset( $post ) && $post != null) {
+ 
+		/*
+		 * new post data array
+		 */
+		$args = array(
+			'comment_status' => $post->comment_status,
+			'ping_status'    => $post->ping_status,
+			'post_author'    => $new_post_author,
+			'post_content'   => $post->post_content,
+			'post_excerpt'   => $post->post_excerpt,
+			'post_name'      => $post->post_name,
+			'post_parent'    => $post->post_parent,
+			'post_password'  => $post->post_password,
+			'post_status'    => 'draft',
+			'post_title'     => 'COPY of '. $post->post_title,
+			'post_type'      => $post->post_type,
+			'to_ping'        => $post->to_ping,
+			'menu_order'     => $post->menu_order
+		);
+ 
+		/*
+		 * insert the post by wp_insert_post() function
+		 */
+		$new_post_id = wp_insert_post( $args );
+ 
+		/*
+		 * get all current post terms ad set them to the new post draft
+		 */
+		$taxonomies = get_object_taxonomies($post->post_type); // returns array of taxonomy names for post type, ex array("category", "post_tag");
+		foreach ($taxonomies as $taxonomy) {
+			$post_terms = wp_get_object_terms($post_id, $taxonomy, array('fields' => 'slugs'));
+			wp_set_object_terms($new_post_id, $post_terms, $taxonomy, false);
+		}
+ 
+		/*
+		 * duplicate all post meta just in two SQL queries
+		 */
+		$post_meta_infos = $wpdb->get_results("SELECT meta_key, meta_value FROM $wpdb->postmeta WHERE post_id=$post_id");
+		if (count($post_meta_infos)!=0) {
+			$sql_query = "INSERT INTO $wpdb->postmeta (post_id, meta_key, meta_value) ";
+			foreach ($post_meta_infos as $meta_info) {
+				$meta_key = $meta_info->meta_key;
+				$meta_value = addslashes($meta_info->meta_value);
+				$sql_query_sel[]= "SELECT $new_post_id, '$meta_key', '$meta_value'";
+			}
+			$sql_query.= implode(" UNION ALL ", $sql_query_sel);
+			$wpdb->query($sql_query);
+		}
+ 
+ 
+		/*
+		 * finally, redirect to the edit post screen for the new draft
+		 */
+		 
+		 if ( wp_get_referer() ) {
+			 
+			 wp_safe_redirect( wp_get_referer() );
+			 
+			 } else {
+				 
+				 wp_redirect( admin_url( 'post.php?action=edit&post=' . $new_post_id ) );
+				 
+				 }
+		
+		exit;
+	} else {
+		wp_die('Post creation failed, could not find original post: ' . $post_id);
+	}
+}
+
+
+add_action( 'admin_action_ewic_duplicate_slider', 'ewic_duplicate_slider' );
+
+
+/*-------------------------------------------------------------------------------*/
+/*  Admin Bar @since 1.1.73
+/*-------------------------------------------------------------------------------*/
+function ewic_add_toolbar_items($admin_bar){
+	
+	$admin_bar->add_menu( array(
+		'id'    => 'ewic-tb-item',
+		'title' => '<span style="padding:5px;margin-left: 5px;margin-right: 5px;color:#fff;background-color: #f44;background-image:-moz-linear-gradient(bottom,#0074A2, #009DD9);
+	background-image: -webkit-gradient(linear, left bottom, left top, from(#0074A2), to(#009DD9));"><img src="'.plugins_url( 'images/ewic-cp-icon.png' , dirname(__FILE__) ).'" style="vertical-align:middle;margin-right:5px" alt="Image Slider Plugin" title="Image Slider Plugin" />UPGRADE IMAGE SLIDER TO PRO</span>',
+		'href'  => 'https://ghozylab.com/plugins/ordernow.php?order=eispro&utm_source=adminbar&utm_medium=ewic_adminbar&utm_campaign=ewic_adminbar',
+		'target' => '_blank',
+		'meta'  => array(
+			'title' => __('Upgrade to Pro Version'),
+			'target' => '_blank'			
+		),
+	));
+	
+}
+
+add_action('admin_head','ewic_add_toolbar_items_handler');
+
+function ewic_add_toolbar_items_handler() {
+	
+	global $current_screen;
+	
+	if( isset( $current_screen ) && 'easyimageslider' == $current_screen->post_type ) {
+		
+		add_action('admin_bar_menu', 'ewic_add_toolbar_items', 101);
+		
+	}
+	
+}

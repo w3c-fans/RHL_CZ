@@ -3,6 +3,9 @@
 
 /* PRICING TABLE STYLE 3 */
 
+.bestbuy {top: -9px;position: absolute;width: 90px;height: 90px;background: transparent url("../images/badge_bestseller.png") no-repeat scroll left top;right: -8px;}
+.featured {z-index:99; box-shadow:5px 0px 30px rgba(0, 0, 0, 0.5); -webkit-box-shadow:5px 0px 30px rgba(0, 0, 0, 0.5); -moz-box-shadow:5px 0px 30px rgba(0, 0, 0, 0.5); cursor:pointer;}
+
 div.tsc_pricingtable03 div.column_1,
 div.tsc_pricingtable03 div.column_2,
 div.tsc_pricingtable03 div.column_3,

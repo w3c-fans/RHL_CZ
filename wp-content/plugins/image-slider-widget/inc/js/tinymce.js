@@ -1,30 +1,30 @@
 jQuery(document).ready(function($) {
 	
 			sliderList = jQuery('#ewictinymce_select_slider');
+			
+			var ewic_H = 365;
+			var ewic_W = 550;
 
 // END LOAD MEDIA
 
 	jQuery("body").delegate("#ewic_shortcode_button","click",function(){	
 		
-			mg_H = 300;
-			mg_W = 550;
 			sliderList.find('option').remove();
 			jQuery("<option/>").val(0).text('Loading...').appendTo(sliderList);
 			
 		setTimeout(function() {
-			tb_show( 'Shortcode Generator', '#TB_inline?height='+mg_H+'&width='+mg_W+'&inlineId=ewicmodal' );
-			jQuery('#TB_window').css("height", mg_H);
-			jQuery('#TB_window').css("width", mg_W);
-			jQuery('#TB_window').css("top", ((jQuery(window).height() - mg_H) / 6) + 'px');
-			jQuery('#TB_window').css("left", ((jQuery(window).width() - mg_W) / 4) + 'px');
-			jQuery('#TB_window').css("margin-top", ((jQuery(window).height() - mg_H) / 6) + 'px');
-			jQuery('#TB_window').css("margin-left", ((jQuery(window).width() - mg_W) / 4) + 'px');
-			jQuery("#TB_window").css('height','auto');
-			jQuery("#TB_ajaxContent").css('height','auto');
+			tb_show( '<span style="margin-top: 13px;margin-right: 7px;" class="dashicons dashicons-images-alt2"></span>Shortcode Generator<span class="ewic_cp_version">v'+ewic_tinymce_vars.sc_version+'</span>', '#TB_inline?height='+ewic_H+'&width='+ewic_W+'&inlineId=ewicmodal' );
+			jQuery("#TB_window").addClass("TB_ewic_window").css('z-index','999999');
+			jQuery("#TB_ajaxContent").addClass("TB_ewic_ajaxContent");
+			jQuery(".TB_ewic_ajaxContent").css('height','auto');
 			jQuery("select#ewictinymce_select_slider").val("select");
+			ewic_H = 365;
+			
+			$("#TB_closeWindowButton").replaceWith($("<div class='closetb' id='TB_closeWindowButton'><span class='screen-reader-text'>Close</span><span class='tb-close-icon'></span></div>"));
 			
 			//load ajax to grab slider list ( we need this methode to avoid conflict in media editor with another plugin )
 			grabslider();
+			ewictbReposition();
 			
 
 		}, 300);	
@@ -56,31 +56,52 @@ jQuery(document).ready(function($) {
 		});	
 		
 		
-function grabslider() {
-	
-			jQuery.ajax({
-			url: ajaxurl,
-			data:{
-				'action': 'ewic_grab_slider_list_ajax',
-				'grabslider': 'yes'
-			},
-			dataType: 'JSON',
-			type: 'POST',
-			success:function(response){
-				sliderList.find('option').remove();
-				jQuery("<option/>").val('select').text('- Select Slider -').appendTo(sliderList);
-				jQuery.each(response, function(i, option)
-				{
-					jQuery("<option/>").val(option.val).text(option.title).appendTo(sliderList);
-				});
-			},
-			error: function(errorThrown){
-			   jQuery("<option/>").val('select').text('- Select Slider -').appendTo(sliderList);
-			}
+		function grabslider() {
 			
-		}); // End Grab	
+					jQuery.ajax({
+					url: ajaxurl,
+					data:{
+						'action': 'ewic_grab_slider_list_ajax',
+						'grabslider': 'yes'
+					},
+					dataType: 'JSON',
+					type: 'POST',
+					success:function(response){
+						sliderList.find('option').remove();
+						jQuery("<option/>").val('select').text('- Select Slider -').appendTo(sliderList);
+						jQuery.each(response, function(i, option)
+						{
+							jQuery("<option/>").val(option.val).text(option.title).appendTo(sliderList);
+						});
+					},
+					error: function(errorThrown){
+					   jQuery("<option/>").val('select').text('- Select Slider -').appendTo(sliderList);
+					}
+					
+				}); // End Grab	
+				
+		}
 		
-}
+		
+		// Reposition Thickbox
+		function ewictbReposition() {
+			
+			$('.TB_ewic_window').css({
+				'top' : ((jQuery(window).height() - ewic_H) / 6) + 'px',
+				'left' : ((jQuery(window).width() - ewic_W) / 4) + 'px',
+				'margin-top' : ((jQuery(window).height() - ewic_H) / 6) + 'px',
+				'margin-left' : ((jQuery(window).width() - ewic_W) / 4) + 'px',
+				'max-height' : parseInt(ewic_H) + 'px',
+				'min-height' : parseInt(ewic_H) + 'px',
+			});
+				
+		}
+		
+		$(window).resize(function() {
+			
+			ewictbReposition();
+			
+		});
 		
 		
 });

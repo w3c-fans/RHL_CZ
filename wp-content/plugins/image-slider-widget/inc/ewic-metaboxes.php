@@ -50,11 +50,11 @@ function ewic_admin_head_script () {
 			?>
             
 			<style type="text/css" media="screen">
-			a:focus {box-shadow: none !important; }
-			#minor-publishing { display: none !important; }
-			.media-toolbar-secondary .spinner { float: left; margin-right: 5px; }
-			@media only screen and (min-width: 1150px) {	
-		    	#side-sortables.fixed { position: fixed; top: 55px; right: 20px; width: 280px; }
+				a:focus {box-shadow: none !important; }
+				#minor-publishing { display: none !important; }
+				.media-toolbar-secondary .spinner { float: left; margin-right: 5px; }
+				@media only screen and (min-width: 1150px) {	
+		    		#side-sortables.fixed { position: fixed; top: 55px; right: 20px; width: 280px; }
 				}	
             </style>
 			

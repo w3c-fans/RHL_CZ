@@ -592,3 +592,72 @@ footer#footer .colophon a.back-to-top {
 .category-products-and-service .left.tc-sidebar{
 	display: none;
 }
+
+.bdsharebuttonbox{
+	float: right;
+	margin-right: 15px;
+	top: 4px;
+	right: 15px;
+	position: relative;
+}
+.bdsharebuttonbox:before{
+	content: "分享至：";
+	position: absolute;
+    left: -60px;
+    top: 10px;
+    color: #fff;
+
+}
+.bdsharebuttonbox .bds_more{
+	display: none;
+}
+
+
+.bdshare-button-style2-32 .bds_sqq, .bdshare-button-style2-32 .bds_weixin{
+	background: none;
+}
+
+
+
+.bdshare-button-style2-32 .bds_sqq, .bdshare-button-style2-32 .bds_weixin{
+    display: inline-block;
+    font-family: FontAwesome;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-language-override: normal;
+    font-size: inherit;
+    font-size-adjust: none;
+    font-stretch: normal;
+    font-style: normal;
+    font-synthesis: weight style;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+
+.bdshare-button-style2-32 .bds_sqq, .bdshare-button-style2-32 .bds_weixin {
+	color: :#fff;
+    display: inline-block;
+    font-size: 26px;
+    margin-right: 10px;
+    text-align: right;
+    line-height: 32px;
+    width: 32px;
+    text-decoration: none!important;
+}
+.fontawesome-icon-list .fa-hover a:hover {
+    background-color: #1d9d74;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.fa-qq::before, .bdshare-button-style2-32 .bds_sqq:after {
+	color: #fff;
+    content: "";
+}
+.fa-wechat::before, .fa-weixin::before,.bdshare-button-style2-32 .bds_weixin:before{
+	color: #fff;
+    content: "";
+}

@@ -1,111 +1,126 @@
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=1; plural=0;\n"
 "Project-Id-Version: Image Slider (Lite)\n"
-"POT-Creation-Date: 2015-10-24 05:56-0800\n"
-"PO-Revision-Date: 2015-11-13 15:08-0800\n"
+"POT-Creation-Date: 2016-05-27 12:50+0700\n"
+"PO-Revision-Date: 2016-05-27 12:50+0700\n"
+"Last-Translator: \n"
 "Language-Team: \n"
+"Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: easy-slider-widget-lite.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
 "esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
-"Last-Translator: \n"
-"Language: id\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: easy-slider-widget-lite.php:129
+#: easy-slider-widget-lite.php:122
 msgctxt "post type general name"
 msgid "Image Sliders"
 msgstr "Image Sliders"
 
-#: easy-slider-widget-lite.php:130
+#: easy-slider-widget-lite.php:123
 msgctxt "post type singular name"
 msgid "Image Slider"
 msgstr "Image Slider"
 
-#: easy-slider-widget-lite.php:131
+#: easy-slider-widget-lite.php:124
 msgid "Add New Slider"
 msgstr "Tambah Slider Baru"
 
-#: easy-slider-widget-lite.php:132
+#: easy-slider-widget-lite.php:125
 msgid "Slider Item"
 msgstr "Slider Item"
 
-#: easy-slider-widget-lite.php:133
+#: easy-slider-widget-lite.php:126
 msgid "Edit Slider"
 msgstr "Mengedit Slider"
 
-#: easy-slider-widget-lite.php:134
+#: easy-slider-widget-lite.php:127
 msgid "New Slider"
 msgstr "Tambah Slider Baru"
 
-#: easy-slider-widget-lite.php:135
+#: easy-slider-widget-lite.php:128
 msgid "View Slider"
 msgstr "Lihat Slider"
 
-#: easy-slider-widget-lite.php:136
+#: easy-slider-widget-lite.php:129
 msgid "Search Slider"
 msgstr "Cari Slider"
 
-#: easy-slider-widget-lite.php:137
+#: easy-slider-widget-lite.php:130
 msgid "No Slider Found"
 msgstr "Slider tidak ditemukan"
 
-#: easy-slider-widget-lite.php:138
+#: easy-slider-widget-lite.php:131
 msgid "No Slider Found In Trash"
 msgstr "Slider tidak ditemukan di tempat sampah"
 
-#: easy-slider-widget-lite.php:139
+#: easy-slider-widget-lite.php:132
 msgid "Parent Slider"
 msgstr "Induk Slider"
 
-#: easy-slider-widget-lite.php:140
+#: easy-slider-widget-lite.php:133
 msgid "Image Slider"
 msgstr "Image Slider"
 
-#: easy-slider-widget-lite.php:148
+#: easy-slider-widget-lite.php:141
 msgid "Easy Slider"
 msgstr "Easy Slider"
 
-#: easy-slider-widget-lite.php:173
+#: easy-slider-widget-lite.php:166
 msgid "Sliders"
 msgstr "Slider"
 
-#: easy-slider-widget-lite.php:207
-msgctxt "post type general name"
-msgid "Sliders"
-msgstr "Slider"
+#: easy-slider-widget-lite.php:201
+msgid "Slider Name"
+msgstr "Nam Slider"
 
-#: easy-slider-widget-lite.php:208
+#: easy-slider-widget-lite.php:202
 msgid "Total Image"
 msgstr "Total Gambar"
 
-#: easy-slider-widget-lite.php:209
+#: easy-slider-widget-lite.php:203
 msgid "Shortcode"
 msgstr "Shortcode"
 
-#: easy-slider-widget-lite.php:210
+#: easy-slider-widget-lite.php:204
 msgid "ID"
 msgstr "ID"
 
-#: easy-slider-widget-lite.php:211
-msgid "Preview"
-msgstr "Pratinjau"
+#: easy-slider-widget-lite.php:206
+msgid "Actions"
+msgstr "Aksi"
+
+#: easy-slider-widget-lite.php:414 inc/ewic-metaboxes.php:358
+msgid "Settings"
+msgstr "Pengaturan"
+
+#: easy-slider-widget-lite.php:436
+msgid "Donate"
+msgstr "Donasi"
+
+#: easy-slider-widget-lite.php:437
+msgid "Tutorials"
+msgstr "Panduan"
+
+#: easy-slider-widget-lite.php:438
+msgid "Rate Us"
+msgstr "Beri kami peringkat"
 
 #: inc/ewic-metaboxes.php:13
-msgid "Upgrade to Pro Version"
-msgstr "Upgrade ke Versi Pro"
-
-#: inc/ewic-metaboxes.php:14
 msgid "AMAZING Pro Version DEMO"
 msgstr "Versi Pro yang MENAKJUBKAN"
+
+#: inc/ewic-metaboxes.php:14 inc/functions/ewic-functions.php:734
+msgid "Upgrade to Pro Version"
+msgstr "Upgrade ke Versi Pro"
 
 #: inc/ewic-metaboxes.php:328
 msgid "Select/Upload Images"
@@ -126,10 +141,6 @@ msgstr ""
 "gambar</i></strong> di bawah ini dan pilih gambar yang ingin Anda Tampilkan."
 "<br>Tekan <strong>Ctrl + klik pada setiap gambar</strong> untuk memilih "
 "beberapa gambar sekaligus."
-
-#: inc/ewic-metaboxes.php:358
-msgid "Settings"
-msgstr "Pengaturan"
 
 #: inc/ewic-metaboxes.php:366
 msgid "Slider Size"
@@ -268,12 +279,14 @@ msgstr "Menggunakan widget ini untuk menampilkan slider gambar Anda."
 
 #: inc/ewic-widget.php:11
 msgid "Image Slider Widget"
-msgstr ""
+msgstr "Gambar Slider Widget"
 
 #: inc/functions/ewic-functions.php:236
 msgid ""
-"We recommend you to enable plugin Auto Update so you'll get the latest "
-"features and other important updates from <strong>"
+"We recommend you to enable plugin Auto Update so you will get the latest "
+"features and other important updates from <strong>Image Slider (Lite)</"
+"strong>.<br />Click <a href=\"#\"><strong><span id=\"ewicdoautoupdate"
+"\">here</span></strong></a> to enable Auto Update."
 msgstr ""
 
 #: inc/functions/ewic-functions.php:319 inc/pages/ewic-addons.php:35
@@ -283,107 +296,136 @@ msgid ""
 "later."
 msgstr "Ada kesalahan mengambil daftar dari server. Harap coba lagi nanti."
 
-#: inc/functions/ewic-functions.php:352
+#: inc/functions/ewic-functions.php:353
 msgid ""
 "Fill your Affiliate Account Email or Payment Email and press Connect button "
 "to start earn extra Money with us!"
 msgstr ""
+"Isi Email atau Pembayaran Email dan tekan tombol Akun Afiliasi Connect untuk "
+"mulai mendapatkan uang tambahan dengan kami!"
 
-#: inc/functions/ewic-functions.php:368
+#: inc/functions/ewic-functions.php:369
 msgid "Account Email or Payment Email"
-msgstr ""
-
-#: inc/functions/ewic-functions.php:393
-msgid "How does it work?"
-msgstr ""
+msgstr "Akun Email atau Pembayaran Email"
 
 #: inc/functions/ewic-functions.php:394
+msgid "How does it work?"
+msgstr "Bagaimana cara kerjanya?"
+
+#: inc/functions/ewic-functions.php:397
 msgid ""
 "After successfully registered with our Affiliate program what you have to do "
-"just :<ul style=\"margin-left: 30px;list-style-type: circle;\"><li>Fill your "
-"Affiliate Account Email or Payment Email in field above and Hit Connect "
-"button</li><li>After connected you will see green connected status</"
-"li><li>Check your slider and you will find your affiliate link in the bottom "
-"of your slider like in the right side screenshot</li><li>Now when "
-"individuals follow that link and subsequently make a purchase, you will be "
-"credited for the transaction and you will receive a payout</"
-"li><li>Congratulations! You are ready to start to earn extra money :)</li></"
-"ul>"
+"just :"
 msgstr ""
+"Setelah berhasil terdaftar dengan Program Afiliasi kami apa yang harus Anda "
+"lakukan hanya:"
 
-#: inc/pages/ewic-freeplugins.php:106
+#: inc/functions/ewic-functions.php:398
+msgid ""
+"Fill your Affiliate Account Email or Payment Email in field above and Hit "
+"Connect button"
+msgstr ""
+"Isi Akun Afiliasi Anda Email atau Pembayaran Email pada bidang di atas dan "
+"tekan tombol Connect"
+
+#: inc/functions/ewic-functions.php:399
+msgid "After connected you will see green connected status"
+msgstr "Setelah terhubung, Anda akan melihat status terhubung berwarna hijau"
+
+#: inc/functions/ewic-functions.php:400
+msgid ""
+"Check your form and you will find your affiliate link in the bottom of your "
+"slider like in the right side screenshot"
+msgstr ""
+"Periksa formulir Anda dan Anda akan menemukan link afiliasi Anda di bagian "
+"bawah slider seperti pada gambar sisi kanan"
+
+#: inc/functions/ewic-functions.php:401
+msgid ""
+"Now when individuals follow that link and subsequently make a purchase, you "
+"will be credited for the transaction and you will receive a payout"
+msgstr ""
+"Sekarang ketika seseorang mengikuti link dan kemudian melakukan pembelian, "
+"Anda akan dikreditkan untuk transaksi dan Anda akan menerima payout"
+
+#: inc/functions/ewic-functions.php:402
+msgid "Congratulations! You are ready to start to earn extra money"
+msgstr ""
+"Selamat! Anda siap untuk mulai mendapatkan uang tambahan dengan kami :)"
+
+#: inc/pages/ewic-freeplugins.php:166
 #, php-format
 msgid "By %s"
 msgstr "Oleh %s"
 
-#: inc/pages/ewic-freeplugins.php:118
+#: inc/pages/ewic-freeplugins.php:178
 #, php-format
 msgid "Install %s now"
 msgstr "Menginstal %s sekarang"
 
-#: inc/pages/ewic-freeplugins.php:118
+#: inc/pages/ewic-freeplugins.php:178
 msgid "Install Now"
 msgstr "Pasang sekarang"
 
-#: inc/pages/ewic-freeplugins.php:125
+#: inc/pages/ewic-freeplugins.php:185
 #, php-format
 msgid "Update %s now"
 msgstr "Perbarui %s sekarang"
 
-#: inc/pages/ewic-freeplugins.php:125
+#: inc/pages/ewic-freeplugins.php:185
 msgid "Update Now"
 msgstr "Memperbarui sekarang"
 
-#: inc/pages/ewic-freeplugins.php:131
+#: inc/pages/ewic-freeplugins.php:191
 msgid "This plugin is already installed and is up to date"
 msgstr "Plugin ini sudah terinstal dan up to date"
 
-#: inc/pages/ewic-freeplugins.php:131
+#: inc/pages/ewic-freeplugins.php:191
 msgctxt "plugin"
 msgid "Installed"
 msgstr "Sudah Terinstall"
 
-#: inc/pages/ewic-freeplugins.php:140
+#: inc/pages/ewic-freeplugins.php:200
 #, php-format
 msgid "More information about %s"
 msgstr "Informasi lebih lanjut tentang %s"
 
-#: inc/pages/ewic-freeplugins.php:140
+#: inc/pages/ewic-freeplugins.php:200
 msgid "More Details"
 msgstr "Lebih detail"
 
-#: inc/pages/ewic-freeplugins.php:207
+#: inc/pages/ewic-freeplugins.php:268
 msgid "Last Updated:"
 msgstr "Terakhir Diperbarui:"
 
-#: inc/pages/ewic-freeplugins.php:208
+#: inc/pages/ewic-freeplugins.php:269
 #, php-format
 msgid "%s ago"
 msgstr "%s yang lalu"
 
-#: inc/pages/ewic-freeplugins.php:212
+#: inc/pages/ewic-freeplugins.php:273
 #, php-format
 msgid "%s download"
 msgid_plural "%s downloads"
 msgstr[0] "%s Download"
 
-#: inc/pages/ewic-freeplugins.php:217
+#: inc/pages/ewic-freeplugins.php:278
 msgid "Untested with your version of WordPress"
 msgstr "Belum diuji dengan versi WordPress Anda"
 
-#: inc/pages/ewic-freeplugins.php:219
+#: inc/pages/ewic-freeplugins.php:280
 msgid "<strong>Incompatible</strong> with your version of WordPress"
 msgstr "<strong>Tidak Kompatibel</strong> dengan versi WordPress"
 
-#: inc/pages/ewic-freeplugins.php:221
+#: inc/pages/ewic-freeplugins.php:282
 msgid "<strong>Compatible</strong> with your version of WordPress"
 msgstr "<strong>Kompatibel</strong> dengan versi WordPress"
 
-#: inc/pages/ewic-pricing.php:21
+#: inc/pages/ewic-pricing.php:31
 msgid "Comparison"
 msgstr "Perbandingan Versi"
 
-#: inc/pages/ewic-settings.php:13 inc/pages/ewic-welcome.php:72
+#: inc/pages/ewic-settings.php:13 inc/pages/ewic-welcome.php:73
 msgid "Global Settings"
 msgstr "Pengaturan"
 
@@ -403,142 +445,153 @@ msgstr "Nonaktifkan"
 msgid "Check this out!"
 msgstr "Lihat ini!"
 
-#: inc/pages/ewic-welcome.php:69
+#: inc/pages/ewic-welcome.php:70
 msgid "UPGRADE to PRO"
 msgstr "Upgrade ke PRO"
 
-#: inc/pages/ewic-welcome.php:205
+#: inc/pages/ewic-welcome.php:402
+msgid "Shortcode copied to clipboard"
+msgstr "Shortcode disalin ke clipboard"
+
+#: inc/pages/ewic-welcome.php:446
 msgid "What's New"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:208
+#: inc/pages/ewic-welcome.php:449
 msgid "Getting Started"
 msgstr "Perkenalan"
 
-#: inc/pages/ewic-welcome.php:211
+#: inc/pages/ewic-welcome.php:452
 msgid "Addons"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:215
+#: inc/pages/ewic-welcome.php:456
 msgid "Free Plugins"
 msgstr "Plugin Gratis"
 
-#: inc/pages/ewic-welcome.php:219
+#: inc/pages/ewic-welcome.php:460
 msgid "Premium Plugins"
 msgstr "Premium Plugins"
 
-#: inc/pages/ewic-welcome.php:223
+#: inc/pages/ewic-welcome.php:464
 msgid ""
 "<span class=\"ewic-dollar\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extra</span>"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:243 inc/pages/ewic-welcome.php:346
-#: inc/pages/ewic-welcome.php:402 inc/pages/ewic-welcome.php:431
-#: inc/pages/ewic-welcome.php:462 inc/pages/ewic-welcome.php:493
+#: inc/pages/ewic-welcome.php:485 inc/pages/ewic-welcome.php:588
+#: inc/pages/ewic-welcome.php:644 inc/pages/ewic-welcome.php:673
+#: inc/pages/ewic-welcome.php:704 inc/pages/ewic-welcome.php:735
 msgid "Welcome to "
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:244 inc/pages/ewic-welcome.php:319
-#: inc/pages/ewic-welcome.php:347 inc/pages/ewic-welcome.php:403
-#: inc/pages/ewic-welcome.php:432 inc/pages/ewic-welcome.php:463
-#: inc/pages/ewic-welcome.php:494
+#: inc/pages/ewic-welcome.php:486 inc/pages/ewic-welcome.php:561
+#: inc/pages/ewic-welcome.php:589 inc/pages/ewic-welcome.php:645
+#: inc/pages/ewic-welcome.php:674 inc/pages/ewic-welcome.php:705
+#: inc/pages/ewic-welcome.php:736
 msgid "Thank you for installing "
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:245 inc/pages/ewic-welcome.php:320
-#: inc/pages/ewic-welcome.php:348 inc/pages/ewic-welcome.php:404
-#: inc/pages/ewic-welcome.php:433 inc/pages/ewic-welcome.php:464
-#: inc/pages/ewic-welcome.php:495
+#: inc/pages/ewic-welcome.php:487 inc/pages/ewic-welcome.php:562
+#: inc/pages/ewic-welcome.php:590 inc/pages/ewic-welcome.php:646
+#: inc/pages/ewic-welcome.php:675 inc/pages/ewic-welcome.php:706
+#: inc/pages/ewic-welcome.php:737
 #, php-format
 msgid "Version %s"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:252
+#: inc/pages/ewic-welcome.php:494
 msgid "New Welcome Page"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:256
+#: inc/pages/ewic-welcome.php:498
 msgid ""
 "Version 1.1.15 introduces a comprehensive welcome page interface. The easy "
 "way to get important informations about this product and other related "
 "plugins."
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:258
+#: inc/pages/ewic-welcome.php:500
 msgid ""
 "In this page, you will find four important Tabs named Getting Started, "
 "Addons, Free Plugins, Premium Plugins and Extra."
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:264
+#: inc/pages/ewic-welcome.php:506
 msgid "ADDONS"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:268
+#: inc/pages/ewic-welcome.php:510
 msgid ""
 "Need some Pro version features to be applied in your Free version? What you "
 "have to do just go to <strong>Addons</strong> page and choose any Addons "
 "that you want to install. All listed addons are Premium version."
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:274
+#: inc/pages/ewic-welcome.php:516
 msgid "Additional Updates"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:279
+#: inc/pages/ewic-welcome.php:521
 msgid "CSS Clean and Optimization"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:280
+#: inc/pages/ewic-welcome.php:522
 msgid ""
 "We've improved some css class to make your slider for look fancy and better."
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:286
+#: inc/pages/ewic-welcome.php:528
 msgid "Disable Notifications"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:287
+#: inc/pages/ewic-welcome.php:529
 msgid ""
 "In this version you will no longer see some annoying notifications in top of "
 "slider editor page. Thanks for who suggested it."
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:293
+#: inc/pages/ewic-welcome.php:535
 msgid "Improved Several Function"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:294
+#: inc/pages/ewic-welcome.php:536
 msgid ""
 "Slider function has been improved to be more robust and fast so you can "
 "create slider only in minutes."
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:301
+#: inc/pages/ewic-welcome.php:543
 msgid "View the Full Changelog"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:318
+#: inc/pages/ewic-welcome.php:560
 msgid " Changelog"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:325
+#: inc/pages/ewic-welcome.php:567
 msgid "Full Changelog"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:352
-msgid "There are no complicated instructions for using "
+#: inc/pages/ewic-welcome.php:594
+msgid ""
+"There are no complicated instructions because this plugin designed to make "
+"all easy. Please watch the following video and we believe that you will "
+"easily to understand it just in minutes :"
 msgstr ""
+"Tidak ada instruksi yang rumit untuk menggunakan plugin ini karena plugin "
+"ini dirancang untuk membuat semua mudah. Silahkan menonton berikut video dan "
+"kami percaya bahwa Anda akan mudah untuk memahaminya hanya dalam beberapa "
+"menit:"
 
-#: inc/pages/ewic-welcome.php:361
+#: inc/pages/ewic-welcome.php:603
 msgid "Need Help?"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:365
+#: inc/pages/ewic-welcome.php:607
 msgid "Phenomenal Support"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:366
+#: inc/pages/ewic-welcome.php:608
 msgid ""
 "We do our best to provide the best support we can. If you encounter a "
 "problem or have a question, post a question in the <a href=\"https://"
@@ -546,11 +599,11 @@ msgid ""
 "forums</a>."
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:368
+#: inc/pages/ewic-welcome.php:610
 msgid "Need Even Faster Support?"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:369
+#: inc/pages/ewic-welcome.php:611
 msgid ""
 "Just upgrade to <a target=\"_blank\" href=\"http://demo.ghozylab.com/plugins/"
 "easy-image-slider-plugin/pricing/\">Pro version</a> and you will get "
@@ -558,19 +611,19 @@ msgid ""
 "depth assistance."
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:375
+#: inc/pages/ewic-welcome.php:617
 msgid "Stay Up to Date"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:379
+#: inc/pages/ewic-welcome.php:621
 msgid "Get Notified of Addons Releases"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:380
+#: inc/pages/ewic-welcome.php:622
 msgid "New Addons that make "
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:521
+#: inc/pages/ewic-welcome.php:763
 msgid "No valid changlog was found."
 msgstr ""
 
@@ -594,3 +647,10 @@ msgstr ""
 #. Author of the plugin/theme
 msgid "GhozyLab, Inc."
 msgstr ""
+
+#~ msgctxt "post type general name"
+#~ msgid "Sliders"
+#~ msgstr "Slider"
+
+#~ msgid "Preview"
+#~ msgstr "Pratinjau"

@@ -85,7 +85,7 @@ class EWIC_Welcome {
 	public function ewic_admin_head() {
 		remove_submenu_page( 'edit.php?post_type=easyimageslider', 'ewic-changelog' );
 		remove_submenu_page( 'edit.php?post_type=easyimageslider', 'ewic-getting-started' );
-		remove_submenu_page( 'edit.php?post_type=easyimageslider', 'ewic-free-plugins' );
+		//remove_submenu_page( 'edit.php?post_type=easyimageslider', 'ewic-free-plugins' );
 		remove_submenu_page( 'edit.php?post_type=easyimageslider', 'ewic-premium-plugins' );
 		remove_submenu_page( 'edit.php?post_type=easyimageslider', 'ewic-addons' );
 		remove_submenu_page( 'edit.php?post_type=easyimageslider', 'ewic-earn-xtra-money' );
@@ -130,6 +130,10 @@ class EWIC_Welcome {
 		/*<![CDATA[*/
 		
 		a:focus {box-shadow: none !important; }
+		
+		.ewic-container-cnt .feature-section p {
+			max-width: 100% !important;	
+		}
 		
 		.ewictabs{
 			width:auto;
@@ -356,6 +360,38 @@ class EWIC_Welcome {
 	public function ewic_include_clipboard_script() {
 	
 			?>
+            
+				<style>
+
+		.ewic_actions {margin-right: 15px !important;margin-top: 5px !important;}
+		.ewic_tooltips {box-shadow: none !important; }
+		.ewic_tooltips[alt] { position: relative;}
+		.ewic_tooltips[alt]:hover:after{
+content: attr(alt);
+padding: 3px 12px;
+color: #85003a;
+position: absolute;
+white-space: nowrap;
+z-index: 20;
+left:0px;
+top:33px;
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+-moz-box-shadow: 0px 0px 2px #c0c1c2;
+-webkit-box-shadow: 0px 0px 2px #c0c1c2;
+box-shadow: 0px 0px 2px #c0c1c2;
+background-image: -moz-linear-gradient(top, #ffffff, #eeeeee);
+background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #ffffff),color-stop(1, #eeeeee));
+background-image: -webkit-linear-gradient(top, #ffffff, #eeeeee);
+background-image: -moz-linear-gradient(top, #ffffff, #eeeeee);
+background-image: -ms-linear-gradient(top, #ffffff, #eeeeee);
+background-image: -o-linear-gradient(top, #ffffff, #eeeeee);}
+.delsliders:hover {color:rgb(171, 27, 27);}
+				
+				</style>
+            
+            
 				<script>
 				
 					jQuery(function($) {
@@ -758,7 +794,7 @@ class EWIC_Welcome {
 		
     if ( is_admin() && get_option( 'activatedewic' ) == 'ewic-activate' && !is_network_admin() ) {
 		delete_option( 'activatedewic' );
-		wp_safe_redirect( admin_url( 'edit.php?post_type=easyimageslider&page=ewic-whats-new' ) ); exit;
+		wp_safe_redirect( admin_url( 'edit.php?post_type=easyimageslider&page=ewic-free-plugins' ) ); exit;
 		
     	}
 

@@ -21,3 +21,4 @@
 * If you want to make quick style test / changes, consider using the Custom CSS section in appearance > customize > advanced options > Custom CSS, it will persist on update since it is saved in your database.
 * To make important CSS customizations, you'll want to use a child theme and add your css code in the style.css file of it.
 */
+body{background-color:#fff;}

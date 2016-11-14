@@ -6,7 +6,7 @@ Description: Image Slider (Lite) - Displaying your image as slider in post/page/
 Author: GhozyLab, Inc.
 Text Domain: image-slider-widget
 Domain Path: /languages
-Version: 1.1.63
+Version: 1.1.89
 Author URI: http://www.ghozylab.com/plugins/
 */
 
@@ -42,7 +42,7 @@ define( 'EWIC_API_URL', 'http://secure.ghozylab.com/' );
 if (!defined("EWIC_PLUGIN_SLUG")) define("EWIC_PLUGIN_SLUG","image-slider-widget/easy-slider-widget-lite.php");
 
 if ( !defined( 'EWIC_VERSION' ) ) {
-	define( 'EWIC_VERSION', '1.1.63' );
+	define( 'EWIC_VERSION', '1.1.89' );
 	}
 
 if ( !defined( 'EWIC_NAME' ) ) {
@@ -51,17 +51,17 @@ if ( !defined( 'EWIC_NAME' ) ) {
 	
 // Pro Price
 if ( !defined( 'EWIC_PRO' ) ) {
-	define( 'EWIC_PRO', '27' );
+	define( 'EWIC_PRO', '19' );
 }
 
 // Pro+
 if ( !defined( 'EWIC_PROPLUS' ) ) {
-	define( 'EWIC_PROPLUS', '35' );
+	define( 'EWIC_PROPLUS', '27' );
 }
 
 // Pro++ Price
 if ( !defined( 'EWIC_PROPLUSPLUS' ) ) {
-	define( 'EWIC_PROPLUSPLUS', '50' );
+	define( 'EWIC_PROPLUSPLUS', '35' );
 }
 
 // Dev Price
@@ -197,11 +197,13 @@ add_filter( 'manage_edit-easyimageslider_columns', 'easyimageslider_edit_columns
 function easyimageslider_edit_columns( $easyimageslider_columns ){  
 	$easyimageslider_columns = array(  
 		'cb' => '<input type="checkbox" />',  
-		'title' => _x( 'Sliders', 'post type general name', 'image-slider-widget' ),
+		//'title' => _x( 'Sliders', 'post type general name', 'image-slider-widget' ),
+		'ewic_ttl' => __( 'Slider Name', 'image-slider-widget'),
 		'ewic_imgcnt' => __( 'Total Image', 'image-slider-widget'),
-		'ewic_sc' => __( 'Shortcode', 'image-slider-widget'),
+		'ewic_sc' => __( 'Shortcode', 'image-slider-widget').' ( <span style="font-style:italic; font-size:12px;">click to copy</span> )',
 		'ewic_id' => __( 'ID', 'image-slider-widget'),
-		'ewic_preview' => __( 'Preview', 'image-slider-widget')		
+		//'ewic_preview' => __( 'Preview', 'image-slider-widget'),
+		'ewic_editor' => __( 'Actions', 'image-slider-widget'),
 			
 	);  
 	unset( $columns['Date'] );
@@ -219,6 +221,12 @@ if ( is_array( get_post_meta( $post_id, 'ewic_meta_select_images', true ) ) ) {
 		}
 
 	switch ( $easyimageslider_columns ) {
+		
+		case 'ewic_ttl':
+		
+		echo '<span class="dashicons dashicons-images-alt2" style="margin: 0px 5px 0px 0px;"></span> <strong>'.strip_tags( get_the_title( $post_id ) ).'</strong>';
+
+	        break;
 			
 	    case 'ewic_imgcnt':
 		
@@ -238,10 +246,17 @@ if ( is_array( get_post_meta( $post_id, 'ewic_meta_select_images', true ) ) ) {
 
 	        break;
 			
-	    case 'ewic_preview':
+	  /* case 'ewic_preview':
 		
 		echo '<a class="button ewicprev" onClick="alert(\'This feature only available in Pro Version.\')"><span class="dashicons dashicons-desktop" style="margin: 4px 5px 0px 0px;"></span>Preview</a>';
+	        break;*/
+			
+	    case 'ewic_editor':
+		
+		echo '<a class="ewic_tooltips" alt="Edit Slider" href="'.get_edit_post_link( $post_id ).'"><span class="dashicons dashicons-edit ewic_actions"></span></a>'.( current_user_can('edit_posts') ? '<a class="ewic_tooltips" alt="Duplicate Slider" href="'.admin_url( 'admin.php?action=ewic_duplicate_slider&amp;post=' . $post_id . '"><span class="dashicons dashicons-admin-page ewic_actions"></span></a>' ) : '').'<a style="cursor:pointer;" class="ewic_tooltips" alt="Preview" onClick="alert(\'This feature only available in Pro Version.\')"><span class="dashicons dashicons-desktop ewic_actions"></span></a><a class="ewic_tooltips delsliders" alt="Delete Slider" href="'.( isset( $_GET['post_status'] ) && $_GET['post_status'] == 'trash' ? get_delete_post_link( $post_id, '', true ) : get_delete_post_link( $post_id ) ).'"><span class="dashicons dashicons-trash ewic_actions"></span></a>';
+		
 	        break;
+			
 
 		default:
 			break;
@@ -405,4 +420,24 @@ function ewic_settings_link( $link, $file ) {
 
 add_filter( 'plugin_action_links', 'ewic_settings_link', 10, 2 );
 
-?>
+
+/*
+|--------------------------------------------------------------------------
+| Plugin List Menu @since 1.1.85
+|--------------------------------------------------------------------------
+*/
+function ewic_settings_link_rowmeta( $link, $file ) {
+	static $this_plugin;
+	
+	if ( !$this_plugin )
+		$this_plugin = plugin_basename( __FILE__ );
+
+	if ( $file == $this_plugin ) {
+		$link[] = '<a href="https://ghozy.link/rs3bq" target="_blank"><span class="dashicons dashicons-heart"></span>&nbsp;' . __( 'Donate', 'image-slider-widget' ) . '</a>';
+		$link[] = '<a href="https://www.youtube.com/watch?v=-W8u_t05K2Y" target="_blank"><span class="dashicons dashicons-editor-help"></span>&nbsp;' . __( 'Tutorials', 'image-slider-widget' ) . '</a>';
+		$link[] = '<a href="https://wordpress.org/support/view/plugin-reviews/image-slider-widget?filter=5" target="_blank"><span class="dashicons dashicons-star-filled"></span>&nbsp;' . __( 'Rate Us', 'image-slider-widget' ) . '</a>';
+	}
+	
+	return $link;
+}
+add_filter( 'plugin_row_meta', 'ewic_settings_link_rowmeta', 10, 2 );

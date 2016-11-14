@@ -1,32 +1,32 @@
- === Image Slider ===
+ === Slider ===
 Contributors: GhozyLab
-Donate link: https://plasso.co/donate@ghozylab.com
-Tags: image, images, slider, image slider, plugin slider, best slider, slideshow image, free slider, image slideshow, photo slide, responsive slider, slideshow, carousel, coin slider, coinslider, flex slider, flexslider, nivo slider, nivoslider
+Donate link: https://ghozy.link/rs3bq
+Tags: image slider, photo slider, responsive slider, slider, slider plugin, slideshow, wordpress slider, wordpress slideshow, wp slider, slide, picture slider, image
 Requires at least: 3.5
-Tested up to: 4.4.1
-Stable tag: 1.1.63
+Tested up to: 4.6.1
+Stable tag: 1.1.89
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Slider - Create image slider for posts, page or even in your sidebar just in minutes.
+Slider Plugin - The best responsive image slider for your posts, page or sidebar.
 
 == Description ==
-= Responsive Slider Plugin =
-**Image Slider** plugin is the best **[slider](http://demo.ghozylab.com/plugins/easy-image-slider-plugin/?utm_source=wordpress&utm_medium=description-link&utm_campaign=slider "slider plugin")** plugin for your post/page/widget or sidebar area. Allows you to customize the **slider** to looking exactly what you want.
 
-The [slider image](https://wordpress.org/plugins/image-slider-widget/ "slider image") is 100% **responsive** and compatible with mobile, tablets, desktop computers and all modern web browsers which include iPhone, iPad, Android, Chrome, Safari, Firefox, Opera and Internet Explorer 7/8/9/10/11
+= About Slider Plugin =
+**Image Slider** plugin is the best **[slider](http://demo.ghozylab.com/plugins/easy-image-slider-plugin/?utm_source=wordpress&utm_medium=description-link&utm_campaign=slider "image slider plugin")** plugin for your post/page/widget or sidebar area. You can be able to generate beautiful image sliders entirely. There is a huge amount of settings that you may tweak, including perfect transition effects, prev/next navigation, bullets with thumbnails, auto play, pause/stop and other options. You just assign a variety of styles, colors and effects into your slider. There is simply no knowledge of programming necessary in any way. You wont need to type a single line of code!
 
-With the built-in transition effects, you can easily create stunning [image slider](http://demo.ghozylab.com/plugins/easy-image-slider-plugin/?utm_source=wordpress&utm_medium=description-link&utm_campaign=slider "image slider plugin") without writing any JavaScript or CSS codes.
+The slider is extremely easy to use. The shortcode generator also make you to insert the **slider** to your post, page and widget easily.
 
-With a self-explanatory user interface, the plugin is extremely easy to use. With the provided shortcode generator, it's also easy to insert the **slider** to your post, page and widget.
+= Responsive Slider =
+This [slider](https://wordpress.org/plugins/image-slider-widget/ "slider image") plugin is 100% **responsive** and compatible with mobile, tablets, desktop computers and all modern web browsers which include iPhone, iPad, Android, Chrome, Safari, Firefox, Opera, Internet Explorer 7/8/9/10/11 and also Microsoft Edge.
 
 ### Live Demo
 > 
-> * [SLIDER DEMO : LITE VERSION](http://demo.ghozylab.com/plugins/easy-image-slider-plugin/ "slider thumbnails on bottom demo")
-> * [SLIDER DEMO PRO VERSION : Image Slider with Thumbnails at The Bottom](http://demo.ghozylab.com/plugins/easy-image-slider-plugin/image-slider-with-thumbnails-at-the-bottom/ "slider thumbnails on bottom demo")
-> * [SLIDER DEMO PRO VERSION : Image Slider with Bullet Navigation](http://demo.ghozylab.com/plugins/easy-image-slider-plugin/image-slider-with-bullet-navigation/ "slider with bullet navigation demo")
-> * [SLIDER DEMO PRO VERSION : Image Slider with Thumbnails on Left](http://demo.ghozylab.com/plugins/easy-image-slider-plugin/image-slider-with-thumbnails-on-left/ "slider thumbnails on left demo")
-> * [SLIDER DEMO PRO VERSION : Image Slider with Thumbnails on Right](http://demo.ghozylab.com/plugins/easy-image-slider-plugin/image-slider-with-thumbnails-on-right/ "slider thumbnails on right demo")
+> * [SLIDER DEMO : LITE VERSION](https://ghozy.link/4096h "slider thumbnails on bottom demo")
+> * [SLIDER DEMO PRO VERSION : Image Slider with Thumbnails at The Bottom](https://ghozy.link/9vlg3 "slider thumbnails on bottom demo")
+> * [SLIDER DEMO PRO VERSION : Image Slider with Bullet Navigation](https://ghozy.link/g74rv "slider with bullet navigation demo")
+> * [SLIDER DEMO PRO VERSION : Image Slider with Thumbnails on Left](https://ghozy.link/q6zjf "slider thumbnails on left demo")
+> * [SLIDER DEMO PRO VERSION : Image Slider with Thumbnails on Right](https://ghozy.link/gtjan "slider thumbnails on right demo")
 
 ### Lite Features
 > 
@@ -37,7 +37,7 @@ With a self-explanatory user interface, the plugin is extremely easy to use. Wit
 > * Slider Delay
 > * +25 Slider Effect ( Easing )
 > * fade, Horizontal or vertical slider modes
-> * Open Slider in a Lightbox ( when clicked )
+> * Open Slider in a Lightbox
 > * Slideshow using adaptiveHeight
 > * Browser support: Firefox, Chrome, Safari, iOS, Android, IE7+
 
@@ -71,11 +71,15 @@ This slider plugin fully responsive and will adapt to any devices, Firefox, Chro
 > * Automatic Image Cropping
 > * Tons of options
 > * Open image on Lightbox
+> * Link an image to another page / URL
 > * Custom CSS & JS
 > * Social Share Buttons ( Facebook, Twitter, Google+, Linkedin, Stumbleupon, Pinterest, Email )
 
 = Best Slider Control Panel ( Pro ) =
 The powerful plugin settings panel makes deep customization possible. It means that the interface is adaptive, user can add or remove slider navigator, slider arrow navigator and slider thumbnail navigator, or any decoration interface.
+
+= Full Responsive =
+Image Slider Pro is reponsive by calling API. The API method $ScaleWidth is the best performance responsive slider carousel approach, Image Slider Pro can be scaled to any size at realtime.
 
 = 360+ Slideshow Effects/Transitions ( Pro ) =
 Image Slider Pro comes with 360+ awesome **slideshow** effects, and the most scalable slideshow transition build tool enables you build infinite slideshow transitions.
@@ -86,9 +90,6 @@ Tons of options enable you build your own title transition. You can start with f
 = Cross Browser, All Browsers Supported ( Pro ) =
 Image Slider Pro is cross browser slider plugin, all browsers are supported (IE 6+, Firefox 2+, Chrome 3+, Safari 3+, Opera 10+, iOS Safari, Opera Mobile, Android Browser, iPhone, iPad, Mac, Windows Surface etc.).
 
-= Full Responsive =
-Image Slider Pro is reponsive by calling API. The API method $ScaleWidth is the best performance responsive slider carousel approach, Image Slider Pro can be scaled to any size at realtime.
-
 = Touch Swipe by Finger/Mouse ( Pro ) =
 When touch the Slider, it will freeze and then move to the direction that finger swipes to.
 
@@ -97,7 +98,9 @@ The following are other recommended plugins by the author:
 
 * [Best Gallery Plugin](https://wordpress.org/plugins/easy-media-gallery/ "Best Gallery Plugin") - Easy Media Gallery is a wordpress plugin designed to display various media support including grid gallery, galleries, photo album, multiple photo albums, portfolio, photo gallery or image gallery.
 * [Best Contact Form Plugin](https://wordpress.org/plugins/contact-form-lite/ "Best Contact Form Plugin") - The Best Contact Form Plugin to create awesome Contact Form in minutes.
-* [Best Popup Plugin](https://wordpress.org/plugins/easy-notify-lite/ "Best Email Subscribe and Optin Plugin") -  The Best Notify and Subscription Form Plugin to display notify popup, announcement and subscribe form with very ease, fancy and elegant.
+* [Instagram Plugin](https://wordpress.org/plugins/feed-instagram-lite/ "Instagram") - Display your Instagram media as masonry gallery in WordPress site with very easily.
+* [Web Icon Fonts Plugin](https://wordpress.org/plugins/icon/ "Icon Fonts Plugin") - Select and insert icon into your post or page just in one click. More than 2.5k icons available. 
+* [Best Popup Plugin](https://wordpress.org/plugins/easy-notify-lite/ "Best Email Subscribe and Optin Plugin") - The Best Notify and Subscription Form Plugin to display notify popup, announcement and subscribe form with very ease, fancy and elegant.
 * [Best Image Carousel](https://wordpress.org/plugins/image-carousel/ "image carousel") - Touch enabled WordPress plugin that lets you create a beautiful responsive image carousel.
 * [Best Gallery Lightbox](https://wordpress.org/plugins/gallery-lightbox-slider/ "Gallery Lightbox") - Gallery Lightbox - Displays all gallery images into the lightbox slider in just a few seconds.
 
@@ -110,13 +113,17 @@ The following are other recommended plugins by the author:
 * Bahasa Indonesia
 * Russian
 * Hebrew
+* Polish
+* Spanish
+* Swedish
+* Romanian
 
 > #### **NOTE**
 > If you would like to create your own language pack or update the existing one, you can send <a href="http://codex.wordpress.org/Translating_WordPress" title="Translating WordPress" target="_blank">the text of PO and MO files</a> for <a href="https://ghozylab.com/plugins" title="GhozyLab" target="_blank">GhozyLab</a> and we'll add it to the plugin. You can download the latest version of the program for work with PO and MO files  <a href="http://www.poedit.net/download.php" title="Download Poedit" target="_blank">Poedit</a>.
 
 = Technical Support =
 
-If any problem occurs or if you think, that you found a bug please contact us at [info@ghozylab.com](mailto:info@ghozylab.com).
+If any problem occurs or if you think, that you found a bug please contact us at [here](http://redirect.ghozylab.com/mailto.php "Contact Us").
 
 == Installation ==
 
@@ -161,7 +168,7 @@ The simplest way to install is to click on 'Plugins' then 'Add' and type 'Image 
 * If you really love Easy Notify any donation would be appreciated! It helps to continue the development and support of the plugin.
 But seriously, I just want to drink coffee for free, so help a developer out. You can use this link [Donate to Image Slider Widget][slider donate].
 
-[slider donate]: https://plasso.co/donate@ghozylab.com
+[slider donate]: https://ghozy.link/rs3bq
             "Donate to Image Slider Widget"
 
 
@@ -175,6 +182,7 @@ But seriously, I just want to drink coffee for free, so help a developer out. Yo
 6. Slider on Lightbox Mode
 7. Pro Version Slider Options
 8. Easy to insert Slider in Widget Area
+9. Slider Affiliate Link
 
 == Other Notes ==
 
@@ -186,15 +194,85 @@ There are no complicated instructions for using Image Slider plugin because this
 
 == Upgrade Notice ==
 
-= 1.1.63 =
+= 1.1.89 =
 IMPORTANT! SECURITY BUGS FIX, PLEASE UPDATE NOW!
 
 == Changelog ==
 
+= 1.1.89 =
+* Tweak : Shortcode Manager Interface
+* Update : WordPress 4.6.1 compatibility
+* Timestamp : none
+
+= 1.1.87 =
+* Update : WordPress 4.6 compatibility
+* Fixed : Max width for P ( Paragraphs ) element issue on Wordpress 4.6 in Custom page
+* Timestamp : 08/18/16 00:12:16
+
+= 1.1.85 =
+* Updated : All Languages
+* Tweak : Menu on plugin list
+* Timestamp : 04/20/16 07:53:22
+
+= 1.1.83 =
+* Updated : Wordpress 4.5 compatibility
+* New : Romanian Language ( ro_RO )
+* New : Swedish Language ( sv_SE )
+* Timestamp : none
+
+= 1.1.81 =
+* Updated : Disable admin notice
+* Timestamp : 04/06/16 01:07:13
+
+= 1.1.79 =
+* New : Danish Language ( da_DK )
+* Fixed : Many other PHP and CSS clean and optimization
+* Timestamp : 03/21/16 15:43:51
+
+= 1.1.77 =
+* New : Spanish Language ( es_ES )
+* Fixed : Many other PHP and CSS clean and optimization
+* Timestamp : 03/15/16 12:52:38
+
+= 1.1.75 =
+* Updated : All Languages
+* New : Language ( pl_PL )
+* Fixed : Many other PHP and CSS clean and optimization
+* Timestamp : 03/13/16 05:21:19
+
+= 1.1.73 =
+* Updated : Share Button Icons
+* Fixed : Many other PHP and CSS clean and optimization
+* Timestamp : 03/05/16 23:37:12
+
+= 1.1.71 =
+* Updated : PHP error on AJAX Call when WP_DEBUG is ON
+* Timestamp : 02/24/16 16:00:29
+
+= 1.1.70 =
+* Updated : Custom Page Link on plugin activated
+* Timestamp : 02/16/16 10:21:43
+
+= 1.1.69 =
+* Updated : Demo Link on Free Plugins Page
+* Fixed : Many other PHP and CSS clean and optimization
+* Timestamp : 02/11/16 17:52:47
+
+= 1.1.67 =
+* Added : New feature to duplicate slider. See on slider overview
+* Updated : All Languages
+* Fixed : Many other PHP and CSS clean and optimization
+* Timestamp : 02/07/16 09:49:52
+
+= 1.1.65 =
+* Updated : Wordpress 4.4.2 compatibility
+* Tweak : Free plugins page
+* Timestamp : 02/01/16 01:28:02
+
 = 1.1.63 =
 * Fixed : Disable Blink Icon on Admin Menu
 * Tweak : Add link to settings page on plugin list
-* Timestamp : none
+* Timestamp : 01/28/16 18:47:20
 
 = 1.1.61 =
 * New Language Netherlands ( nl_NL )

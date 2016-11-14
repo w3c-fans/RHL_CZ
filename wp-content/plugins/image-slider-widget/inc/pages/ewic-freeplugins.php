@@ -81,6 +81,64 @@ color: #FFF !important;
 .ewic-button-update:hover {
     color: #FFF !important;
 	background: none repeat scroll 0% 0% #DA3232 !important;
+}
+
+.most_popular {top: -5px;position: absolute;width: 115px;height: 85px;background: transparent url("<?php echo EWIC_URL;?>/inc/images/most_popular.png") no-repeat scroll left top;right: -5px;}
+
+.drop-shadow {
+    position:relative;
+    background:#fff;
+	margin-bottom:40px;
+}
+
+.drop-shadow:before,
+.drop-shadow:after {
+    content:"";
+    position:absolute; 
+    z-index:-2;
+}
+
+/* Lifted corners */
+
+.lifted {
+    -moz-border-radius:4px; 
+         border-radius:4px;
+}
+
+.lifted:before,
+.lifted:after { 
+    bottom:15px;
+    left:10px;
+    width:50%;
+    height:20%;
+    max-width:300px;
+    -webkit-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);   
+       -moz-box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+            box-shadow:0 15px 10px rgba(0, 0, 0, 0.7);
+    -webkit-transform:rotate(-3deg);    
+       -moz-transform:rotate(-3deg);   
+        -ms-transform:rotate(-3deg);   
+         -o-transform:rotate(-3deg);
+            transform:rotate(-3deg);
+}
+
+.lifted:after {
+    right:10px; 
+    left:auto;
+    -webkit-transform:rotate(3deg);   
+       -moz-transform:rotate(3deg);  
+        -ms-transform:rotate(3deg);  
+         -o-transform:rotate(3deg);
+            transform:rotate(3deg);
+}
+
+.ewic-container-cnt .plugin-card {
+    border: 1px solid #d7d7d7 !important;
+}
+
+.ewic-container-cnt .plugin-card-bottom {
+    border-top: 1px solid #c2c2c2 !important;
+	background-color: #efefef !important;
 }	
 
 		
@@ -161,8 +219,9 @@ color: #FFF !important;
 			 */
 			$action_links = apply_filters( 'plugin_install_action_links', $action_links, $plugin );
 		?>
-		<div class="plugin-card">
+		<div class="plugin-card drop-shadow lifted">
 			<div class="plugin-card-top" style="min-height: 160px !important;">
+            <?php if ( isset( $plugin["slug"] ) && $plugin["slug"] == 'easy-media-gallery' ) {echo '<div class="most_popular"></div>';} ?>
 				<a href="<?php echo esc_url( $details_link ); ?>" class="thickbox plugin-icon"><img width="128" height="128" src="<?php echo esc_attr( $plugin_icon_url ) ?>" /></a>
 				<div class="name column-name" style="margin-right: 20px !important;">
 					<h4><a href="<?php echo esc_url( $details_link ); ?>" class="thickbox"><?php echo $title; ?></a></h4>
@@ -180,7 +239,7 @@ color: #FFF !important;
 							
 							switch( $plugin["slug"] ){
 								case "easy-media-gallery" :
-								echo '<li><a class="button" aria-label="PRO VERSION DEMO" href="http://ghozylab.com/plugins/easy-media-gallery-pro/demo/" target="_blank">PRO VERSION DEMO</a></li>';
+								echo '<li><a class="button" aria-label="PRO VERSION DEMO" href="https://ghozylab.com/plugins/easy-media-gallery-pro/demo/best-gallery-and-photo-albums-demo/" target="_blank">PRO VERSION DEMO</a></li>';
 								break;
 								
 								case "image-slider-widget" :
@@ -188,11 +247,15 @@ color: #FFF !important;
 								break;
 								
 								case "easy-notify-lite" :
-								echo '<li><a class="button" aria-label="PRO VERSION DEMO" href="http://ghozylab.com/plugins/easy-notify-pro/demo/" target="_blank">PRO VERSION DEMO</a></li>';
+								echo '<li><a class="button" aria-label="PRO VERSION DEMO" href="https://ghozylab.com/plugins/easy-notify-pro/demo/" target="_blank">PRO VERSION DEMO</a></li>';
 								break;
 								
 								case "contact-form-lite" :
-								echo '<li><a class="button" aria-label="PRO VERSION DEMO" href="http://demo.ghozylab.com/plugins/easy-contact-form-plugin/contact-form-recaptcha/" target="_blank">PRO VERSION DEMO</a></li>';
+								echo '<li><a class="button" aria-label="PRO VERSION DEMO" href="http://demo.ghozylab.com/plugins/easy-contact-form-plugin/demo-form-registration/" target="_blank">PRO VERSION DEMO</a></li>';
+								break;
+								
+								case "feed-instagram-lite" :
+								echo '<li><a class="button" aria-label="PRO VERSION DEMO" href="http://demo.ghozylab.com/plugins/instagram-feed-plugin/" target="_blank">PRO VERSION DEMO</a></li>';
 								break;
 								
 								default:

@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Image Slider (Lite)\n"
-"POT-Creation-Date: 2016-01-22 21:28+0700\n"
+"POT-Creation-Date: 2016-03-21 22:22+0700\n"
 "PO-Revision-Date: 2015-10-08 14:22-0800\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 1.8.6\n"
+"X-Generator: Poedit 1.8.7\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-WPHeader: easy-slider-widget-lite.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -78,32 +78,35 @@ msgstr ""
 msgid "Sliders"
 msgstr ""
 
-#: easy-slider-widget-lite.php:200
-msgctxt "post type general name"
-msgid "Sliders"
-msgstr ""
-
 #: easy-slider-widget-lite.php:201
-msgid "Total Image"
+msgid "Slider Name"
 msgstr ""
 
 #: easy-slider-widget-lite.php:202
-msgid "Shortcode"
+msgid "Total Image"
 msgstr ""
 
 #: easy-slider-widget-lite.php:203
-msgid "ID"
+msgid "Shortcode"
 msgstr ""
 
 #: easy-slider-widget-lite.php:204
-msgid "Preview"
+msgid "ID"
+msgstr ""
+
+#: easy-slider-widget-lite.php:206
+msgid "Actions"
+msgstr ""
+
+#: easy-slider-widget-lite.php:414 inc/ewic-metaboxes.php:358
+msgid "Settings"
 msgstr ""
 
 #: inc/ewic-metaboxes.php:13
 msgid "AMAZING Pro Version DEMO"
 msgstr ""
 
-#: inc/ewic-metaboxes.php:14
+#: inc/ewic-metaboxes.php:14 inc/functions/ewic-functions.php:734
 msgid "Upgrade to Pro Version"
 msgstr ""
 
@@ -119,10 +122,6 @@ msgid ""
 "button below and select an images that you want to show in your widget area."
 "<br />Press <strong>Ctrl + click on each images</strong> to select multiple "
 "images."
-msgstr ""
-
-#: inc/ewic-metaboxes.php:358
-msgid "Settings"
 msgstr ""
 
 #: inc/ewic-metaboxes.php:366
@@ -313,72 +312,72 @@ msgstr ""
 msgid "Congratulations! You are ready to start to earn extra money"
 msgstr ""
 
-#: inc/pages/ewic-freeplugins.php:108
+#: inc/pages/ewic-freeplugins.php:166
 #, php-format
 msgid "By %s"
 msgstr ""
 
-#: inc/pages/ewic-freeplugins.php:120
+#: inc/pages/ewic-freeplugins.php:178
 #, php-format
 msgid "Install %s now"
 msgstr ""
 
-#: inc/pages/ewic-freeplugins.php:120
+#: inc/pages/ewic-freeplugins.php:178
 msgid "Install Now"
 msgstr ""
 
-#: inc/pages/ewic-freeplugins.php:127
+#: inc/pages/ewic-freeplugins.php:185
 #, php-format
 msgid "Update %s now"
 msgstr ""
 
-#: inc/pages/ewic-freeplugins.php:127
+#: inc/pages/ewic-freeplugins.php:185
 msgid "Update Now"
 msgstr ""
 
-#: inc/pages/ewic-freeplugins.php:133
+#: inc/pages/ewic-freeplugins.php:191
 msgid "This plugin is already installed and is up to date"
 msgstr ""
 
-#: inc/pages/ewic-freeplugins.php:133
+#: inc/pages/ewic-freeplugins.php:191
 msgctxt "plugin"
 msgid "Installed"
 msgstr ""
 
-#: inc/pages/ewic-freeplugins.php:142
+#: inc/pages/ewic-freeplugins.php:200
 #, php-format
 msgid "More information about %s"
 msgstr ""
 
-#: inc/pages/ewic-freeplugins.php:142
+#: inc/pages/ewic-freeplugins.php:200
 msgid "More Details"
 msgstr ""
 
-#: inc/pages/ewic-freeplugins.php:209
+#: inc/pages/ewic-freeplugins.php:268
 msgid "Last Updated:"
 msgstr ""
 
-#: inc/pages/ewic-freeplugins.php:210
+#: inc/pages/ewic-freeplugins.php:269
 #, php-format
 msgid "%s ago"
 msgstr ""
 
-#: inc/pages/ewic-freeplugins.php:214
+#: inc/pages/ewic-freeplugins.php:273
 #, php-format
 msgid "%s download"
 msgid_plural "%s downloads"
 msgstr[0] ""
 msgstr[1] ""
 
-#: inc/pages/ewic-freeplugins.php:219
+#: inc/pages/ewic-freeplugins.php:278
 msgid "Untested with your version of WordPress"
 msgstr ""
 
-#: inc/pages/ewic-freeplugins.php:221
+#: inc/pages/ewic-freeplugins.php:280
 msgid "<strong>Incompatible</strong> with your version of WordPress"
 msgstr ""
 
-#: inc/pages/ewic-freeplugins.php:223
+#: inc/pages/ewic-freeplugins.php:282
 msgid "<strong>Compatible</strong> with your version of WordPress"
 msgstr ""
 
@@ -410,145 +409,145 @@ msgstr ""
 msgid "UPGRADE to PRO"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:374
+#: inc/pages/ewic-welcome.php:402
 msgid "Shortcode copied to clipboard"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:418
+#: inc/pages/ewic-welcome.php:446
 msgid "What's New"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:421
+#: inc/pages/ewic-welcome.php:449
 msgid "Getting Started"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:424
+#: inc/pages/ewic-welcome.php:452
 msgid "Addons"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:428
+#: inc/pages/ewic-welcome.php:456
 msgid "Free Plugins"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:432
+#: inc/pages/ewic-welcome.php:460
 msgid "Premium Plugins"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:436
+#: inc/pages/ewic-welcome.php:464
 msgid ""
 "<span class=\"ewic-dollar\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Extra</span>"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:457 inc/pages/ewic-welcome.php:560
-#: inc/pages/ewic-welcome.php:616 inc/pages/ewic-welcome.php:645
-#: inc/pages/ewic-welcome.php:676 inc/pages/ewic-welcome.php:707
+#: inc/pages/ewic-welcome.php:485 inc/pages/ewic-welcome.php:588
+#: inc/pages/ewic-welcome.php:644 inc/pages/ewic-welcome.php:673
+#: inc/pages/ewic-welcome.php:704 inc/pages/ewic-welcome.php:735
 msgid "Welcome to "
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:458 inc/pages/ewic-welcome.php:533
-#: inc/pages/ewic-welcome.php:561 inc/pages/ewic-welcome.php:617
-#: inc/pages/ewic-welcome.php:646 inc/pages/ewic-welcome.php:677
-#: inc/pages/ewic-welcome.php:708
+#: inc/pages/ewic-welcome.php:486 inc/pages/ewic-welcome.php:561
+#: inc/pages/ewic-welcome.php:589 inc/pages/ewic-welcome.php:645
+#: inc/pages/ewic-welcome.php:674 inc/pages/ewic-welcome.php:705
+#: inc/pages/ewic-welcome.php:736
 msgid "Thank you for installing "
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:459 inc/pages/ewic-welcome.php:534
-#: inc/pages/ewic-welcome.php:562 inc/pages/ewic-welcome.php:618
-#: inc/pages/ewic-welcome.php:647 inc/pages/ewic-welcome.php:678
-#: inc/pages/ewic-welcome.php:709
+#: inc/pages/ewic-welcome.php:487 inc/pages/ewic-welcome.php:562
+#: inc/pages/ewic-welcome.php:590 inc/pages/ewic-welcome.php:646
+#: inc/pages/ewic-welcome.php:675 inc/pages/ewic-welcome.php:706
+#: inc/pages/ewic-welcome.php:737
 #, php-format
 msgid "Version %s"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:466
+#: inc/pages/ewic-welcome.php:494
 msgid "New Welcome Page"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:470
+#: inc/pages/ewic-welcome.php:498
 msgid ""
 "Version 1.1.15 introduces a comprehensive welcome page interface. The easy "
 "way to get important informations about this product and other related "
 "plugins."
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:472
+#: inc/pages/ewic-welcome.php:500
 msgid ""
 "In this page, you will find four important Tabs named Getting Started, "
 "Addons, Free Plugins, Premium Plugins and Extra."
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:478
+#: inc/pages/ewic-welcome.php:506
 msgid "ADDONS"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:482
+#: inc/pages/ewic-welcome.php:510
 msgid ""
 "Need some Pro version features to be applied in your Free version? What you "
 "have to do just go to <strong>Addons</strong> page and choose any Addons "
 "that you want to install. All listed addons are Premium version."
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:488
+#: inc/pages/ewic-welcome.php:516
 msgid "Additional Updates"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:493
+#: inc/pages/ewic-welcome.php:521
 msgid "CSS Clean and Optimization"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:494
+#: inc/pages/ewic-welcome.php:522
 msgid ""
 "We've improved some css class to make your slider for look fancy and better."
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:500
+#: inc/pages/ewic-welcome.php:528
 msgid "Disable Notifications"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:501
+#: inc/pages/ewic-welcome.php:529
 msgid ""
 "In this version you will no longer see some annoying notifications in top of "
 "slider editor page. Thanks for who suggested it."
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:507
+#: inc/pages/ewic-welcome.php:535
 msgid "Improved Several Function"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:508
+#: inc/pages/ewic-welcome.php:536
 msgid ""
 "Slider function has been improved to be more robust and fast so you can "
 "create slider only in minutes."
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:515
+#: inc/pages/ewic-welcome.php:543
 msgid "View the Full Changelog"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:532
+#: inc/pages/ewic-welcome.php:560
 msgid " Changelog"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:539
+#: inc/pages/ewic-welcome.php:567
 msgid "Full Changelog"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:566
+#: inc/pages/ewic-welcome.php:594
 msgid ""
 "There are no complicated instructions because this plugin designed to make "
 "all easy. Please watch the following video and we believe that you will "
 "easily to understand it just in minutes :"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:575
+#: inc/pages/ewic-welcome.php:603
 msgid "Need Help?"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:579
+#: inc/pages/ewic-welcome.php:607
 msgid "Phenomenal Support"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:580
+#: inc/pages/ewic-welcome.php:608
 msgid ""
 "We do our best to provide the best support we can. If you encounter a "
 "problem or have a question, post a question in the <a href=\"https://"
@@ -556,11 +555,11 @@ msgid ""
 "forums</a>."
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:582
+#: inc/pages/ewic-welcome.php:610
 msgid "Need Even Faster Support?"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:583
+#: inc/pages/ewic-welcome.php:611
 msgid ""
 "Just upgrade to <a target=\"_blank\" href=\"http://demo.ghozylab.com/plugins/"
 "easy-image-slider-plugin/pricing/\">Pro version</a> and you will get "
@@ -568,19 +567,19 @@ msgid ""
 "depth assistance."
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:589
+#: inc/pages/ewic-welcome.php:617
 msgid "Stay Up to Date"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:593
+#: inc/pages/ewic-welcome.php:621
 msgid "Get Notified of Addons Releases"
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:594
+#: inc/pages/ewic-welcome.php:622
 msgid "New Addons that make "
 msgstr ""
 
-#: inc/pages/ewic-welcome.php:735
+#: inc/pages/ewic-welcome.php:763
 msgid "No valid changlog was found."
 msgstr ""
 
