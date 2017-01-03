@@ -5232,7 +5232,13 @@ textarea {
 section {
 	word-wrap: break-word
 }
-
+article section div, article section p, article section li{
+	line-height: 1.8;
+}
+article section h3{
+	color: #20419a;
+}
+article section table td{padding-left: 10px;}
 .row-fluid [class*="tc-content span12"],
 .row-fluid [class*="tc-thumbnail span12"] {
 	margin-left: 0 !important

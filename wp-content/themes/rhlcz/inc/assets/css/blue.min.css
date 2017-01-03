@@ -599,6 +599,7 @@ footer#footer .colophon a.back-to-top {
 	top: 4px;
 	right: 15px;
 	position: relative;
+	z-index: 999!important;
 }
 .bdsharebuttonbox:before{
 	content: "分享至：";
