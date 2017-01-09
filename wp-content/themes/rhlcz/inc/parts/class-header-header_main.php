@@ -365,7 +365,7 @@ if ( ! class_exists( 'TC_header_main' ) ) :
 		* @since Customizr 3.0.10
 		*/
 		function tc_navbar_display() {
-			$_navbar_classes = implode( " ", apply_filters( 'tc_navbar_wrapper_class', array('navbar-wrapper', 'clearfix', 'span9') ) );
+			$_navbar_classes = implode( " ", apply_filters( 'tc_navbar_wrapper_class', array('navbar-wrapper', 'clearfix', 'span8') ) );
 			ob_start();
 			do_action( '__before_navbar' );
 				?>
@@ -409,7 +409,7 @@ if ( ! class_exists( 'TC_header_main' ) ) :
   	* @since Customizr 3.2.0
   	*/
   	function tc_new_menu_view() {
-    	$_navbar_classes = implode( " ", apply_filters( 'tc_navbar_wrapper_class', array('navbar-wrapper', 'clearfix', 'span9') ) );
+    	$_navbar_classes = implode( " ", apply_filters( 'tc_navbar_wrapper_class', array('navbar-wrapper', 'clearfix', 'span8') ) );
     	do_action( '__before_navbar' );
       	?>
       	<div class="<?php echo $_navbar_classes ?>">
@@ -478,7 +478,7 @@ if ( ! class_exists( 'TC_header_main' ) ) :
 			} else { //when hooked on __navbar
 				$html = sprintf('<%1$s class="%2$s inside site-description">%3$s</%1$s>',
 						apply_filters( 'tc_tagline_tag', 'h2' ),
-						apply_filters( 'tc_tagline_class', 'span7' ),
+						apply_filters( 'tc_tagline_class', 'span8' ),
 						apply_filters( 'tc_tagline_text', __( esc_attr( get_bloginfo( 'description' ) ) ) )
 				);
 
@@ -687,7 +687,7 @@ if ( ! class_exists( 'TC_header_main' ) ) :
 			$_layout = esc_attr( TC_utils::$inst->tc_opt( 'tc_header_layout') );
 			switch ($_layout) {
 				case 'left':
-					$_classes = array('brand', 'span3' , 'pull-left');
+					$_classes = array('brand', 'span4' , 'pull-left');
 				break;
 
 				case 'right':

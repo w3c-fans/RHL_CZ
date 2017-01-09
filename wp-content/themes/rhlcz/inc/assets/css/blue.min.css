@@ -590,15 +590,15 @@ footer#footer .colophon a.back-to-top {
 }
 
 .category-products-and-service .left.tc-sidebar{
-	display: none;
+	
 }
 
 .bdsharebuttonbox{
 	float: right;
 	margin-right: 15px;
-	top: 4px;
+	top: 0;
 	right: 15px;
-	position: relative;
+	position: absolute;
 	z-index: 999!important;
 }
 .bdsharebuttonbox:before{
@@ -661,4 +661,10 @@ footer#footer .colophon a.back-to-top {
 .fa-wechat::before, .fa-weixin::before,.bdshare-button-style2-32 .bds_weixin:before{
 	color: #fff;
     content: "";
+}
+
+.tc-post-list-grid article .entry-title{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
